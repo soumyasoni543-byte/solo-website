@@ -1,90 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f4f0">
-  <meta name="description" content="Original SOLO guides on Indian festive fashion, everyday styling, sarees, jewellery, wardrobes and considered shopping.">
-  <meta property="og:title" content="The Journal — SOLO">
-  <meta property="og:description" content="Fashion notes for festive dressing, everyday outfits, jewellery and considered choices.">
-  <meta property="og:type" content="website">
-  <title>The Journal — SOLO</title>
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../styles.css">
-  <script src="../main.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="SOLO is an AI-powered fashion discovery and personal styling platform: explore trending looks, compare prices, build your closet and get styled for any occasion.">
+<meta property="og:title" content="SOLO — Discover Your Style. Your Way.">
+<meta property="og:description" content="Explore outfit inspiration, trending categories, hot deals and AI styling with SOLO.">
+<meta property="og:type" content="website">
+<title>SOLO — AI-powered fashion discovery</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="solo-app.css">
+<script src="main.js" defer></script>
+<script src="solo-data.js" defer></script>
+<script src="solo-app.js" defer></script>
 </head>
-<body data-path-prefix="../">
-  <div data-site-header></div>
-  <main>
-    <header class="page-heading wrap">
-      <p class="eyebrow">SOLO Journal</p>
-      <h1>Good style begins with a question.</h1>
-      <p>Original notes for festive dressing, everyday outfits, jewellery pairing and more considered choices. Editorial guidance, not product endorsements.</p>
-    </header>
-    <section class="wrap journal-section" aria-label="Browse fashion articles">
-      <div class="journal-tools">
-        <label class="visually-hidden" for="journal-search">Search articles</label>
-        <input class="journal-search" type="search" id="journal-search" data-article-search placeholder="Search by topic or occasion">
-        <label class="visually-hidden" for="journal-category">Filter articles by category</label>
-        <select class="journal-category" id="journal-category" data-article-category>
-          <option value="all">All topics</option>
-          <option value="festive">Festive fashion</option>
-          <option value="occasion">Occasion dressing</option>
-          <option value="saree">Sarees</option>
-          <option value="jewellery">Jewellery</option>
-          <option value="everyday">Everyday style</option>
-          <option value="budget">Budget outfits</option>
-          <option value="wardrobe">Wardrobe</option>
-          <option value="care">Fabric care</option>
-          <option value="shopping">Shopping guides</option>
-        </select>
-        <span class="journal-count" data-article-count aria-live="polite">10 guides</span>
-      </div>
-      <div class="article-grid">
-        <a class="article-card" data-article-card data-category="festive" href="festive-colour.html">
-          <div class="article-card-image"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=82" alt="Festive clothing in saturated colour" loading="lazy" data-fallback="image-fallback"></div>
-          <span class="eyebrow">Festive fashion</span><h2>Choosing festive colour that feels like you</h2><p>Build a colour story around the mood, setting and pieces you already enjoy wearing.</p><span class="article-meta">6 min read</span>
-        </a>
-        <a class="article-card" data-article-card data-category="occasion" href="wedding-guest.html">
-          <div class="article-card-image"><img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=900&q=82" alt="Traditional occasionwear detail" loading="lazy" data-fallback="image-fallback"></div>
-          <span class="eyebrow">Occasion dressing</span><h2>A wedding guest outfit, built in layers</h2><p>Start with comfort and context, then let silhouette, colour and finishing details work together.</p><span class="article-meta">7 min read</span>
-        </a>
-        <a class="article-card" data-article-card data-category="saree" href="saree-draping.html">
-          <div class="article-card-image"><img src="https://images.unsplash.com/photo-1583391733956-6c78276477e4?auto=format&fit=crop&w=900&q=82" alt="Draped fabric and textile detail" loading="lazy" data-fallback="image-fallback"></div>
-          <span class="eyebrow">Sarees</span><h2>Finding a saree drape for your own rhythm</h2><p>A practical guide to movement, pleats, footwear and the small adjustments that help a drape feel natural.</p><span class="article-meta">6 min read</span>
-        </a>
-        <a class="article-card" data-article-card data-category="jewellery" href="jewellery-pairing.html">
-          <div class="article-card-image"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=82" alt="Jewellery close-up" loading="lazy" data-fallback="image-fallback"></div>
-          <span class="eyebrow">Jewellery</span><h2>Pairing jewellery without making it complicated</h2><p>Use neckline, scale, finish and one intentional focal point to build a balanced combination.</p><span class="article-meta">5 min read</span>
-        </a>
-        <a class="article-card" data-article-card data-category="everyday" href="kurtas-everyday.html">
-          <div class="article-card-image"><img src="https://images.unsplash.com/photo-1597983073493-88cd35cf93b0?auto=format&fit=crop&w=900&q=82" alt="Everyday Indian clothing in a light textile" loading="lazy" data-fallback="image-fallback"></div>
-          <span class="eyebrow">Everyday style</span><h2>Making an everyday kurta work harder</h2><p>Small shifts in proportion, layering and accessories can change the feel of a familiar staple.</p><span class="article-meta">5 min read</span>
-        </a>
-        <a class="article-card" data-article-card data-category="budget" href="budget-festive.html">
-          <div class="article-card-image"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=82" alt="An occasionwear silhouette" loading="lazy" data-fallback="image-fallback"></div>
-          <span class="eyebrow">Budget outfits</span><h2>Planning a festive outfit around a budget</h2><p>Choose the pieces that matter first, then reuse, borrow or restyle the details around them.</p><span class="article-meta">6 min read</span>
-        </a>
-        <a class="article-card" data-article-card data-category="wardrobe" href="capsule-wardrobe.html">
-          <div class="article-card-image"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=82" alt="A curated wardrobe of clothing" loading="lazy" data-fallback="image-fallback"></div>
-          <span class="eyebrow">Capsule wardrobe</span><h2>A small wardrobe with more outfit paths</h2><p>Build a flexible edit around repeatable shapes, useful layers and colours you actually reach for.</p><span class="article-meta">7 min read</span>
-        </a>
-        <a class="article-card" data-article-card data-category="care" href="fabric-care.html">
-          <div class="article-card-image"><img src="https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?auto=format&fit=crop&w=900&q=82" alt="Folded fabric and garment care details" loading="lazy" data-fallback="image-fallback"></div>
-          <span class="eyebrow">Fabric care</span><h2>Reading garment care before the first wear</h2><p>Understand care labels and store occasionwear with a little foresight.</p><span class="article-meta">6 min read</span>
-        </a>
-        <a class="article-card" data-article-card data-category="occasion" href="occasion-dressing.html">
-          <div class="article-card-image"><img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=82" alt="An evening outfit on a neutral background" loading="lazy" data-fallback="image-fallback"></div>
-          <span class="eyebrow">Personal style</span><h2>Dress for the invitation, not an imaginary rulebook</h2><p>Use the event details as a guide, then make room for your own comfort and point of view.</p><span class="article-meta">5 min read</span>
-        </a>
-        <a class="article-card" data-article-card data-category="shopping" href="mindful-shopping.html">
-          <div class="article-card-image"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=82" alt="Browsing a clothing rack thoughtfully" loading="lazy" data-fallback="image-fallback"></div>
-          <span class="eyebrow">Shopping guides</span><h2>A more mindful checklist before you shop</h2><p>Pause on fit, use, care and what you already own before deciding whether a new piece belongs.</p><span class="article-meta">6 min read</span>
-        </a>
-      </div>
-      <p class="journal-empty" data-article-empty hidden>No guides match that search. Try another word or choose “All topics”.</p>
-    </section>
-  </main>
-  <div data-site-footer></div>
+<body class="solo-app" data-path-prefix="">
+<div data-site-header></div>
+<main data-page="home"><noscript><p class="wrap">SOLO needs JavaScript to show looks and products.</p></noscript></main>
+<div data-site-footer></div>
 </body>
 </html>

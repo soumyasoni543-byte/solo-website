@@ -4,18 +4,19 @@
   const footerHost = document.querySelector('[data-site-footer]');
 
   if (headerHost) {
+    const here = location.pathname.split('/').pop() || 'index.html';
+    const links = [['index.html', 'Home'], ['discover.html', 'Discover'], ['categories.html', 'Categories'], ['deals.html', 'Deals'], ['ai-styling.html', 'AI Styling'], ['closet.html', 'My Closet']];
+    const current = (file) => (file === here || (file === 'categories.html' && here === 'category.html') || (file === 'discover.html' && here === 'look.html') ? ' aria-current="page"' : '');
     headerHost.innerHTML = `
       <header class="site-header">
         <a class="brand" href="${prefix}index.html" aria-label="SOLO home"><span class="brand-mark" aria-hidden="true">S</span><span>SOLO</span></a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span class="menu-icon" aria-hidden="true">☰</span><span>Menu</span></button>
         <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
-          <a href="${prefix}discover.html">Discover</a>
-          <a href="${prefix}articles/index.html">Journal</a>
-          <a href="${prefix}styling-guides.html">Styling Guides</a>
-          <a href="${prefix}about.html">About</a>
-          <a href="${prefix}contact.html">Contact</a>
-          <a class="nav-cta" href="${prefix}affiliate-disclosure.html">Disclosure</a>
+          ${links.map(([file, label]) => `<a href="${prefix}${file}"${current(file)}>${label}</a>`).join('')}
+          <a class="nav-wish" href="${prefix}wishlist.html"${current('wishlist.html')}>Wishlist <span class="nav-count" data-wish-count hidden>0</span></a>
+          <a class="nav-cta" href="${prefix}profile.html">Login</a>
         </nav>
+        <a class="header-wish" href="${prefix}wishlist.html" aria-label="Wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.6 8.2 3.3 5 6.6 5c2 0 3.6 1.1 5.4 3 1.8-1.9 3.4-3 5.4-3 3.3 0 5 3.2 3.9 6.3-1.8 4.6-9.3 9.2-9.3 9.2z"/></svg><span class="nav-count" data-wish-count hidden>0</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span class="menu-icon" aria-hidden="true">☰</span><span>Menu</span></button>
       </header>`;
   }
 
@@ -26,6 +27,12 @@
           <div class="footer-top">
             <div><a class="brand" href="${prefix}index.html"><span class="brand-mark" aria-hidden="true">S</span><span>SOLO</span></a><p class="footer-note">An independent fashion discovery project. Thoughtful style ideas, without retailer affiliation.</p></div>
             <nav class="footer-links" aria-label="Footer navigation">
+              <a href="${prefix}categories.html">Categories</a>
+              <a href="${prefix}deals.html">Hot Deals</a>
+              <a href="${prefix}ai-styling.html">AI Styling</a>
+              <a href="${prefix}closet.html">My Closet</a>
+              <a href="${prefix}wishlist.html">Wishlist</a>
+              <a href="${prefix}create.html">Create Post</a>
               <a href="${prefix}about.html">About</a>
               <a href="${prefix}contact.html">Contact</a>
               <a href="${prefix}privacy.html">Privacy</a>

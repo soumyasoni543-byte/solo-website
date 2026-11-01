@@ -1,46 +1,35 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Discover outfit inspiration and style ideas by occasion, aesthetic and everyday need with SOLO.">
-  <meta property="og:title" content="Discover — SOLO">
-  <meta property="og:description" content="An independent place to explore outfit inspiration and styling ideas.">
-  <meta property="og:type" content="website">
-  <title>Discover — SOLO</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script src="main.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Discover outfit inspiration by mood, creator and category. Search looks, save favourites and shop every piece with SOLO.">
+<meta property="og:title" content="Discover — SOLO">
+<meta property="og:description" content="Browse trending looks, filter by style and open any look to shop it.">
+<meta property="og:type" content="website">
+<title>Discover — SOLO</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="solo-app.css">
+<script src="main.js" defer></script>
+<script src="solo-data.js" defer></script>
+<script src="solo-app.js" defer></script>
 </head>
-<body data-path-prefix="">
-  <div data-site-header></div>
-  <main>
-    <header class="page-heading wrap">
-      <p class="eyebrow">Independent fashion discovery</p>
-      <h1>Discover a direction.</h1>
-      <p>Start with the occasion, a feeling or a small styling question. SOLO's discovery pages are editorial inspiration, not live product search or retailer inventory.</p>
-    </header>
-    <section class="wrap section-space" aria-labelledby="discover-topics">
-      <div class="section-heading">
-        <div><p class="eyebrow">Browse by mood</p><h2 id="discover-topics">An idea to start from</h2></div>
-      </div>
-      <div class="discovery-grid">
-        <a class="discovery-card discovery-card-large" href="articles/festive-colour.html"><span class="eyebrow">01 · Seasonal edit</span><h3>Festive colour, your way</h3><p>Explore palette, texture and occasion dressing.</p><span class="discovery-link">Read the guide <span aria-hidden="true">↗</span></span></a>
-        <a class="discovery-card" href="articles/wedding-guest.html"><span class="eyebrow">02 · Occasion</span><h3>Wedding guest styling</h3><p>Comfort, context and personal detail.</p><span class="discovery-link">Read the guide <span aria-hidden="true">↗</span></span></a>
-        <a class="discovery-card" href="articles/jewellery-pairing.html"><span class="eyebrow">03 · Detail</span><h3>Jewellery pairing</h3><p>Let one considered detail lead.</p><span class="discovery-link">Read the guide <span aria-hidden="true">↗</span></span></a>
-        <a class="discovery-card" href="articles/kurtas-everyday.html"><span class="eyebrow">04 · Everyday</span><h3>Kurta combinations</h3><p>Make a useful staple feel personal.</p><span class="discovery-link">Read the guide <span aria-hidden="true">↗</span></span></a>
-        <a class="discovery-card" href="articles/capsule-wardrobe.html"><span class="eyebrow">05 · Wardrobe</span><h3>More outfits, fewer pieces</h3><p>Build a wardrobe with repeatable paths.</p><span class="discovery-link">Read the guide <span aria-hidden="true">↗</span></span></a>
-      </div>
-    </section>
-    <section class="discovery-note section-space">
-      <div class="wrap discovery-note-inner">
-        <p class="eyebrow">Future-ready concept</p>
-        <h2>Inspiration first. Shopping, only when it is clear.</h2>
-        <p>SOLO is exploring image-based discovery and product comparison as future features. This static website does not recognize uploaded images, search live products, verify retailer prices or display an active retailer catalogue.</p>
-        <a class="button button-dark" href="affiliate-disclosure.html">How SOLO stays independent <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-  </main>
-  <div data-site-footer></div>
+<body class="solo-app" data-path-prefix="">
+<div data-site-header></div>
+<main data-page="discover"><noscript><p class="wrap">SOLO needs JavaScript to show looks and products.</p></noscript></main>
+<section class="wrap s-section" aria-labelledby="journal-heading">
+  <div class="s-head"><div><p class="s-eyebrow">From the Journal</p><h2 id="journal-heading">Styling guides to start from</h2></div><a class="s-link" href="articles/index.html">All guides</a></div>
+  <div class="s-grid s-grid-community">
+    <a class="s-feature" href="articles/festive-colour.html"><p class="s-eyebrow">Seasonal edit</p><h3>Festive colour, your way</h3><p>Explore palette, texture and occasion dressing.</p></a>
+    <a class="s-feature" href="articles/wedding-guest.html"><p class="s-eyebrow">Occasion</p><h3>Wedding guest styling</h3><p>Comfort, context and personal detail.</p></a>
+    <a class="s-feature" href="articles/capsule-wardrobe.html"><p class="s-eyebrow">Wardrobe</p><h3>More outfits, fewer pieces</h3><p>Build a wardrobe with repeatable paths.</p></a>
+  </div>
+</section>
+<div data-site-footer></div>
 </body>
 </html>
