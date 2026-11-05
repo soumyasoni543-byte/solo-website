@@ -25,7 +25,7 @@
       <footer class="site-footer">
         <div class="wrap">
           <div class="footer-top">
-            <div><a class="brand" href="${prefix}index.html"><span class="brand-mark" aria-hidden="true">S</span><span>SOLO</span></a><p class="footer-note">An independent fashion discovery project. Thoughtful style ideas, without retailer affiliation.</p></div>
+            <div><a class="brand" href="${prefix}index.html"><span class="brand-mark" aria-hidden="true">S</span><span>SOLO</span></a><p class="footer-note">An independent fashion discovery project. Thoughtful style ideas, with links to retailers such as Amazon.</p></div>
             <nav class="footer-links" aria-label="Footer navigation">
               <a href="${prefix}categories.html">Categories</a>
               <a href="${prefix}deals.html">Hot Deals</a>
@@ -43,7 +43,7 @@
               <a href="${prefix}articles/index.html">Journal</a>
             </nav>
           </div>
-          <div class="footer-bottom"><span>© <span data-year></span> SOLO. Independent project.</span><span>Not affiliated with Amazon, Flipkart or Myntra.</span></div>
+          <div class="footer-bottom"><span>© <span data-year></span> SOLO. Independent project.</span><span>SOLO may earn a commission when you shop through affiliate links, at no additional cost to you. SOLO is not endorsed by or partnered with Amazon.</span></div>
         </div>
       </footer>`;
   }
